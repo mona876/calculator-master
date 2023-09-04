@@ -8,17 +8,27 @@
   <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
 
 <!--  linking  css file-->
-  <link rel="stylesheet" href="style\dark.css" id="theme" />
-  <!-- <link rel="stylesheet" href="style\light.css" id="theme" /> -->
-
+     <link rel="stylesheet" href="./style/dark.css" id="theme"/>
+    <!-- <link rel="stylesheet" href="./style/light.css" >  -->
+  <style>
+    .siba{
+      font-size: 20px;
+      background-color: rgb(34, 99, 184);
+      border: 2px solid;
+      border-radius: 10px;
+      padding: 10px;
+     
+    }
+  </style>
 </head>
-
 <body>
-  
+ 
   <div class="wrapper">
-    <div class="container">
+    <H1 class="Mona">THIS CALCULATOR IS MADE BY MONALISA SAHOO</H1>
+    <div class="container" style="border: 2px solid; background-color: rgb(13, 69, 117); border-radius: 15px;">
       <div class="header-container">
         <!-- This heading also notifies about the theme change.-->
+        
         <h1 id="toast">Calculator</h1>
         <div class="top-buttons">
             <img src="assets/Light.svg" alt="Sun Icon" height="22.5" width="22.5" id="g-icon">
@@ -38,7 +48,7 @@
 
       <!-- Second row -->
       <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" />
+        <input class="button" type="button" value="1" onclick="liveScreen(1)" />
         <input type="button" value="2" onclick="liveScreen(2)" />
         <input type="button" value="3" onclick="liveScreen(3)" />
         <input type="button" value="+" onclick="liveScreen('+')" />
@@ -72,9 +82,8 @@
   </div>
 
   <!-- Js Script -->
-  <script src="scripts/script.js">
+  <script src="./javascript/scripts.js">
   </script>
 </body>
 
 </html>
-
